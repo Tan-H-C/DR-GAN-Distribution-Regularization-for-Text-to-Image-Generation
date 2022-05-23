@@ -61,10 +61,10 @@ Training
 go into code/ folder
 bird: python main.py --cfg cfg/bird_DRGAN.yml --gpu 0
 coco: python main.py --cfg cfg/coco_DRGAN.yml --gpu 0
+
+
 Validation
 
-Images generation:
-go into code/ folder
 python main.py --cfg cfg/eval_bird.yml --gpu 0
 python main.py --cfg cfg/eval_coco.yml --gpu 0
 
