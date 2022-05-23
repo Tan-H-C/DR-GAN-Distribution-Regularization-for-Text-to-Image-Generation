@@ -25,7 +25,7 @@ conda install requests nltk pandas scikit-image pyyaml cudatoolkit=9.0
 
 
 
-Data:
+#Data:
 
 Download metadata for birds coco and save them to data/
 
@@ -72,18 +72,14 @@ DAMSM for coco. Download and save it to DAMSMencoders/
 python google_drive.py 1zIrXCE9F6yfbEJIbNP5-YrEe2pZcPSGJ DAMSMencoders/coco.zip
 
 
-DR-GAN for bird. Download and save it to models
+DR-GAN for bird. Download and save it to models  https://pan.baidu.com/s/1EhCc4Hz16b0MgIq1fV4O4Q   PASSWD：XIUP
 
-python google_drive.py 1BmDKqIyNY_7XWhXpxa2gm6TYxB2DQHS3 models/bird_DMGAN.pth
-
-DR-GAN for coco. Download and save it to models
-
-python google_drive.py 1tQ9CJNiLlRLBKSUKHXKYms2tbfzllyO- models/coco_DMGAN.pth
+DR-GAN for coco. Download and save it to models   https://pan.baidu.com/s/10bOuC30AlOAX9km4gjGbbA  PASSWD：XIUP
 
 
 
 
-Training
+#Training:
 
 go into code/ folder
 
@@ -92,7 +88,7 @@ bird: python main.py --cfg cfg/bird_DRGAN.yml --gpu 0
 coco: python main.py --cfg cfg/coco_DRGAN.yml --gpu 0
 
 
-Validation
+#Validation:
 
 python main.py --cfg cfg/eval_bird.yml --gpu 0
 
