@@ -1,9 +1,12 @@
-# DR-GAN-Distribution-Regularization-for-Text-to-Image-Generation
+# DR-GAN-Distribution-Regularization-for-Text-to-Image-Generation-Draft Version
+
 
 Introduction
-This project page is submitted to XXX:
+This project page provides pytorch code that implements the following TNNLS paper:
 
-Arxiv: xxx
+Title: "DR-GAN-Distribution-Regularization-for-Text-to-Image-Generation"
+
+Arxiv: https://arxiv.org/abs/2204.07945
 
 How to use
 Python
@@ -33,7 +36,25 @@ unzip train2014.zip
 unzip val2014.zip
 mv train2014 images
 cp val2014/* images
-Pretrained Models Waitting
+Pretrained Models
+
+
+
+
+
+DAMSM for bird. Download and save it to DAMSMencoders/
+python google_drive.py 1GNUKjVeyWYBJ8hEU-yrfYQpDOkxEyP3V DAMSMencoders/bird.zip
+DAMSM for coco. Download and save it to DAMSMencoders/
+python google_drive.py 1zIrXCE9F6yfbEJIbNP5-YrEe2pZcPSGJ DAMSMencoders/coco.zip
+
+
+DR-GAN for bird. Download and save it to models
+python google_drive.py 1BmDKqIyNY_7XWhXpxa2gm6TYxB2DQHS3 models/bird_DMGAN.pth
+DR-GAN for coco. Download and save it to models
+python google_drive.py 1tQ9CJNiLlRLBKSUKHXKYms2tbfzllyO- models/coco_DMGAN.pth
+
+
+
 
 Training
 
@@ -46,8 +67,6 @@ Images generation:
 go into code/ folder
 python main.py --cfg cfg/eval_bird.yml --gpu 0
 python main.py --cfg cfg/eval_coco.yml --gpu 0
-Inception score (IS for bird, IS for coco):
-cd LE-GAN/eval/IS/bird && python inception_score_bird.py --image_folder ../../../models/bird_LEGAN
-cd LE-GAN/eval/IS/coco && python inception_score_coco.py ../../../models/coco_LEGAN
+
 License
 This code is released under the MIT License (refer to the LICENSE file for details).
